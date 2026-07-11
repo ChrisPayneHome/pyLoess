@@ -20,5 +20,6 @@ test = [
 ]
 
 [tool.setuptools.packages.find]
+where = ["src"]
 include = ["pyloess*"]
 exclude = ["tests*"]
