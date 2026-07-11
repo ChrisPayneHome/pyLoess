@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='pyloess',
+    name='rloess',
     version='1.0.0',
     url='https://github.com/ChrisPayneHome/Loess-model.git',
     author='Christian Payne',
