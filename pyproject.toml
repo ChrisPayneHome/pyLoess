@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyloess"
+version = "0.1.0"
+description = "A Python re-implementation of R's loess() local regression smoother"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "flake8",
+    "statsmodels",  # optional, used only by the cross-check test if present
+]
+
+[tool.setuptools.packages.find]
+include = ["pyloess*"]
+exclude = ["tests*"]
